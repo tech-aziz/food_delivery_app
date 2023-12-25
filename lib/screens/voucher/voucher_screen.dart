@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class LocationScreen extends StatelessWidget {
-  const LocationScreen({super.key});
+class VoucherScreen extends StatelessWidget {
+  const VoucherScreen({super.key});
 
-  static const String routeName = '/location';
+  static const String routeName = '/voucher';
 
   static Route route() {
     return MaterialPageRoute(
-        builder: (context) => const LocationScreen(),
+        builder: (context) => const VoucherScreen(),
         settings: const RouteSettings(name: routeName));
   }
 
@@ -15,15 +15,15 @@ class LocationScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Location'),
+        title: const Text('Voucher'),
         centerTitle: true,
       ),
       body: Center(
         child: ElevatedButton(
             onPressed: () {
-              Navigator.pushNamed(context, '/filter');
+              Navigator.pushNamed(context, '/basket');
             },
-            child: const Text('Filter Screen')),
+            child: const Text('Voucher')),
       ),
     );
   }
