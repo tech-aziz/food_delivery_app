@@ -10,6 +10,9 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Home'),
         centerTitle: true,
       ),
+      body: ElevatedButton(onPressed: () {
+        Navigator.pushNamed(context, '/location');
+      }, child: const Text('Location Screen')),
     );
   }
 }
