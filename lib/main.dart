@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/app_router.dart';
 import 'package:food_delivery_app/screens/home/home_screen.dart';
 
 void main() {
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
       primarySwatch: Colors.blue,
         useMaterial3: false,
       ),
-      home: const HomeScreen(),
+      onGenerateRoute: AppRouter.onGenerateRoute,
+      initialRoute: HomeScreen.routeName,
     );
   }
 }
